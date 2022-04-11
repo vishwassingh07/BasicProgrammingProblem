@@ -9,7 +9,7 @@ namespace BasicProgrammingProb
             Console.WriteLine("Welcome to the Basic Programming Problems");
             bool end = true;
             Console.WriteLine("1. FlipCoin\n2. LeapYear Problem\n3. " +
-                "TableOfTwo\n4. HarmonicSeries\n5. End the Program ");
+                "TableOfTwo\n4. HarmonicSeries\n5. PrimeFactors\n6. End the Program ");
             while (end)
             {
                 Console.WriteLine("Choose an option to execute");
@@ -33,6 +33,10 @@ namespace BasicProgrammingProb
                         series.HarmonicSeries();
                         break;
                     case 5:
+                        PrimeFactors factors = new PrimeFactors();
+                        factors.factors();
+                        break;
+                    case 6:
                         end = false;
                         break;
                     default:
