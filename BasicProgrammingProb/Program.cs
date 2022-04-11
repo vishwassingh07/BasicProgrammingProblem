@@ -8,7 +8,7 @@ namespace BasicProgrammingProb
         {
             Console.WriteLine("Welcome to the Basic Programming Problems");
             bool end = true;
-            Console.WriteLine("1. FlipCoin\n2. LeapYear Problem\n3. End the Program ");
+            Console.WriteLine("1. FlipCoin\n2. LeapYear Problem\n3. TableOfTwo\n4. End the Program ");
             while (end)
             {
                 Console.WriteLine("Choose an option to execute");
@@ -24,6 +24,10 @@ namespace BasicProgrammingProb
                         checking.CheckLeapyear();
                         break;
                     case 3:
+                        TableOfTwo table = new TableOfTwo();
+                        table.Table();
+                        break;
+                    case 4:
                         end = false;
                         break;
                     default:
