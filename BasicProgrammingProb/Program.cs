@@ -8,7 +8,8 @@ namespace BasicProgrammingProb
         {
             Console.WriteLine("Welcome to the Basic Programming Problems");
             bool end = true;
-            Console.WriteLine("1. FlipCoin\n2. LeapYear Problem\n3. TableOfTwo\n4. End the Program ");
+            Console.WriteLine("1. FlipCoin\n2. LeapYear Problem\n3. " +
+                "TableOfTwo\n4. HarmonicSeries\n5. End the Program ");
             while (end)
             {
                 Console.WriteLine("Choose an option to execute");
@@ -28,6 +29,10 @@ namespace BasicProgrammingProb
                         table.Table();
                         break;
                     case 4:
+                        HarmonicNumber series = new HarmonicNumber();
+                        series.HarmonicSeries();
+                        break;
+                    case 5:
                         end = false;
                         break;
                     default:
