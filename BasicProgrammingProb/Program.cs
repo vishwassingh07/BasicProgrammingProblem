@@ -10,7 +10,8 @@ namespace BasicProgrammingProb
             bool end = true;
             Console.WriteLine("1. FlipCoin\n2. LeapYear Problem\n3. " +
                 "TableOfTwo\n4. HarmonicSeries\n5. PrimeFactors\n6. " +
-                "Remainder and Quotient\n7. EvenOrOdd\n8. VowelConsonent\n9." +
+                "Remainder and Quotient\n7. SwappingNumbers\n8. EvenOrOdd\n9. " +
+                "VowelConsonent\n10." +
                 " End the Program ");
             while (end)
             {
@@ -43,14 +44,18 @@ namespace BasicProgrammingProb
                         computing.ComputeQuotientandRemainder();
                         break;
                     case 7:
+                        SwapingTwoNumbers swaping = new SwapingTwoNumbers();
+                        swaping.Swap();
+                        break;
+                    case 8:
                         EvenOdd checkingevenodd = new EvenOdd();
                         checkingevenodd.Checking();
                         break;
-                    case 8:
+                    case 9:
                         VowelConsonant checkingalpha = new VowelConsonant();
                         checkingalpha.alphabetcheck();
                         break;
-                    case 9:
+                    case 10:
                         end = false;
                         break;
                     default:
