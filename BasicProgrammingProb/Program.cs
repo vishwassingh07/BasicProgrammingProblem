@@ -11,7 +11,7 @@ namespace BasicProgrammingProb
             Console.WriteLine("1. FlipCoin\n2. LeapYear Problem\n3. " +
                 "TableOfTwo\n4. HarmonicSeries\n5. PrimeFactors\n6. " +
                 "Remainder and Quotient\n7. SwappingNumbers\n8. EvenOrOdd\n9. " +
-                "VowelConsonent\n10." +
+                "VowelConsonent\n10. FindLargestNumber\n11." +
                 " End the Program ");
             while (end)
             {
@@ -56,6 +56,10 @@ namespace BasicProgrammingProb
                         checkingalpha.alphabetcheck();
                         break;
                     case 10:
+                        LargestNumber largest = new LargestNumber();
+                        largest.FindLargest();
+                        break;
+                    case 11:
                         end = false;
                         break;
                     default:
