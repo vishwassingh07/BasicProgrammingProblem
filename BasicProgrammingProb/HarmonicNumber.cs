@@ -17,7 +17,7 @@ namespace BasicProgrammingProb
             Console.WriteLine("Enter any number: ");
             num = Convert.ToInt32(Console.ReadLine());
 
-            for ( i = 0; i < num; i++)
+            for ( i = 1; i <= num; i++)
             {
                 Console.Write("1/{0} +",  i);
                 result += 1/ (double) i;

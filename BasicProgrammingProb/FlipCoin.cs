@@ -14,7 +14,7 @@ namespace BasicProgrammingProb
         {
             Console.WriteLine("How many flips do you want ?");
             int num = Convert.ToInt32(Console.ReadLine());
-            while (num > 0)
+            for (int i =1; i<=num; i++)
             {
                 Random random = new Random();
                 double option = random.NextDouble();
@@ -26,10 +26,11 @@ namespace BasicProgrammingProb
                 {
                     tailCount++;
                 }
-                num--;
             }
-            double headPercentage = (headCount % 100);
-            double tailPercentage = (tailCount % 100);
+            double headPercentage = (double)(headCount*100) / num;
+            double tailPercentage = (double)(tailCount*100) / num;
+            Console.WriteLine("number of heads :" + headCount);
+            Console.WriteLine("number of tails :" + tailCount);
             Console.WriteLine("Percentage of Head :" + headPercentage);
             Console.WriteLine("Percentage of Tail : " + tailPercentage);
         }
