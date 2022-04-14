@@ -13,6 +13,7 @@ namespace BasicProgrammingProb
         {
             Console.WriteLine("Enter an alphabet to check :");
             value = Convert.ToChar(Console.ReadLine());
+            value = char.ToLower(value);
 
             if (value == 'a' || value == 'e' || value == 'i' || value == 'o' || value == 'u')
             {
